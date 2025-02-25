@@ -1,6 +1,6 @@
 
 ### Project Title:
-*ShopEasy: Your Friendly Online Store*
+**E-commers follow along**
 
 ### Project Overview:
 ShopEasy is a comprehensive e-commerce website that allows users to browse and purchase a variety of products. The website features a catalog of products, a shopping cart, and user authentication for login and signup. The goal is to create a user-friendly shopping experience while implementing essential web development concepts.
