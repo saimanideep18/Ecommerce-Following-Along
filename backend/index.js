@@ -1,20 +1,22 @@
-const express = require('express');
-
+const express = require ("express");
 const app = express();
+const connect = require("./mongoDB");
 
 
-app.use("/",(request,response)=>{
+
+app.get("/",(req,res)=>{
     try{
-        response.status(200).send({message:"this is e-commerce code along backend"})
+        res.status(200).send({message:"This is E-Commerece - Code - Along - Backend"});
     }catch(error){
-        response.status(500).send({message:"error occured"});
-
+        res.status(500).send({message:"Something went wrong"})
     }
 })
-app.listen(8080,()=>{
+
+app.listen(8000,async()=>{
     try{
-        console.log("server is running on port 8080");
+      await connect();
+      console.log("Server connected successfully");
     }catch(error){
-        console.log("error occured");
+        console.log("Serve not connected",error)
     }
 })
