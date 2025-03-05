@@ -1,7 +1,7 @@
 const express = require ("express");
 const app = express();
 const connect = require("./mongoDB");
-
+const userRouter = require("./controller/userRouter");
 
 
 app.get("/",(req,res)=>{
@@ -12,6 +12,7 @@ app.get("/",(req,res)=>{
     }
 })
 
+app.use("/user",userRouter)
 app.listen(8000,async()=>{
     try{
       await connect();
