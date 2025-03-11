@@ -50,3 +50,8 @@ This project is a full-fledged e-commerce application built using the MERN (Mong
 
 * Created the **Sign up page** in React and added code for signup backend also.
 * Added the **Sign up page** validation in(signup,login).
+
+# Milestone 6
+
+* added the **password encryption** in backend signup page.
+* added comparision for checking password is correct or not in login backend.
