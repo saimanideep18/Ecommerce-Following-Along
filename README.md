@@ -56,6 +56,10 @@ This project is a full-fledged e-commerce application built using the MERN (Mong
 * added the **password encryption** in backend signup page.
 * added comparision for checking password is correct or not in login backend.
 
-# Milestone 7
-* Conducted thorough testing of the application to ensure that it is stable and secure.
-* Deployed the application to a production environment (e.g., Heroku).
+### *Milestone 7: Password Decrypt By Using Bcryptjs*
+added the *Password authentication* in backend login page.
+Here we are first getting the hashed password from db searched by email and then comparing the input body password with hashedd password by compare method in bycryptjs.
+
+
+## *Milestone 8: Product Page In Frontend*
+added the *Product Page* in Frontend as a Homepage.
