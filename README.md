@@ -63,3 +63,7 @@ Here we are first getting the hashed password from db searched by email and then
 
 ## *Milestone 8: Product Page In Frontend*
 added the *Product Page* in Frontend as a Homepage.
+
+## *Milestone 9: Created Form For Product Upload*
+Created the **AddProducts** page in Frontend.
+Added form validation.
