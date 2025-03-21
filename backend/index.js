@@ -1,23 +1,39 @@
-const express = require ("express");
+const express = require('express');
 const app = express();
-const connect = require("./mongoDB");
-const userRouter = require("./controller/userRouter");
+const connect = require('connect');
+const userRouter = require('./controller/userRouter');
+const mongoose = require('mongoose')
+app.use(express.json())
+const dotenv=require('dotenv')
+dotenv.config();
+const cors = require('cors')
+app.use(cors());
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
+console.log(MONGO_PASSWORD)
+const PORT = process.env.PORT || 8000;
+
+const productRouter =require('./controller/productRouter')
 
 
-app.get("/",(req,res)=>{
+app.get('/',(req,res)=>{
     try{
-        res.status(200).send({message:"This is E-Commerece - Code - Along - Backend"});
-    }catch(error){
-        res.status(500).send({message:"Something went wrong"})
+        res.status(200).send({message: "This is Ecommerce - code - Along - Backend"})
+
+    }catch(err){
+        res.status(500).send({message: "Something went wrong"});
     }
 })
 
-app.use("/user",userRouter)
-app.listen(8000,async()=>{
+app.use('/user',userRouter);
+
+app.use("/product",productRouter);
+
+app.listen(PORT,async()=>{
     try{
-      await connect();
-      console.log("Server connected successfully");
-    }catch(error){
-        console.log("Serve not connected",error)
+        await connect();
+        console.log("serrver connected sucessfully");
+
+    }catch(err){
+    console.log('server is not connected',error);
     }
 })

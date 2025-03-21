@@ -72,3 +72,7 @@ Added form validation.
 Created **ProductModel** in backend.
 Created the **productRouter** page in Backend.
 Handeled file uploads by multer inside middleware multer.
+
+## *Milestone 11: Created HOmepage For Product*
+Created **Home page** for dynamic products presentation.
+added the **backend** part for handling poducts (created endpoint to get products).

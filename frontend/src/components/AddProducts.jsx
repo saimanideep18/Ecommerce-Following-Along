@@ -11,7 +11,7 @@ const AddProduct = () => {
     })
     const [productImages,setProductImages]=useState([])
 
-    async function handelSubmit(ele){
+    async function handelSubmit(e){
         try{
             const {name,email,password} = productDetails;
             if(!name||!email||!password || productImages.length ==0){
