@@ -1,50 +1,52 @@
-import  { useState } from 'react'
-import "./Login.css"
-
+import React, { useState } from 'react'
+import styles from "./login.module.css";
+import axios from 'axios';
 const Login = () => {
-    const [loginData, setLoginData] = useState({
-        email: '',
-        password: ''
+    const[loginData,setLoginData] = useState({
+        email:"",
+        password:""
     })
 
-    function handleinput(e){
-        setLoginData({
-            ...loginData,
-            [e.target.name]: e.target.value
-        })
+    function handleInput(e){
+        setLoginData({...loginData,[e.target.name]:e.target.value})
     }
 
-    function handleSubmit(e) {
-        e.preventDefault()
-        if(loginData.email === ""){
-            alert('Email is required')
-            return;
-        }
-        if(loginData.password === ""){ 
-            alert('Password is required')
+
+   async function handleLogin(event){
+        event.preventDefault();
+        if(loginData.email == ""){
+            alert("Please enter email...");
             return;
         }
 
-        alert("You are successfully logged in");
-    }   
+        if(loginData.password == ""){
+            alert("Please enter password...");
+            return;
+        }
+        try {
+            const checkUser = await axios("http://localhost:8080/user/login",loginData);
+            alert("You successfully loged in");
+        } catch (error) {
+            console.log(error);
+            alert("Something went wrong while logging in");
+            
+        }
 
+
+        alert("You sucessfully loged in");
+    }
 
   return (
     <div>
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor=''>Email : </label>
-                <input type="email" value={loginData.email} name='email' onChange={handleinput} placeholder="Enter your email" />
-            </div>
-            <div>
-                <label>Password : </label>
-                <input type="password" value={loginData.password} name="password" onChange={handleinput} placeholder="Enter your password" />
-            </div>
-            <button type="submit">Login</button>
+        <form onSubmit={handleLogin} className={styles.formbox} >
+            <label htmlFor="">Email</label>
+            <input type="email" value={loginData.email} name='email' onChange={handleInput} placeholder='Email...' />
+            <label>password</label>
+            <input type="password" value={loginData.password} name="password" onChange={handleInput} placeholder='password...' />
+            <input type="submit" />
         </form>
     </div>
   )
 }
-
 
 export default Login

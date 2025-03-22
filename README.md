@@ -76,3 +76,7 @@ Handeled file uploads by multer inside middleware multer.
 ## *Milestone 11: Created HOmepage For Product*
 Created **Home page** for dynamic products presentation.
 added the **backend** part for handling poducts (created endpoint to get products).
+
+## *Milestone 12: Showing product according to user**
+Created **Product Page** for dynamic products presentation according to user mail.
+Created backend for specific user products.
