@@ -84,3 +84,7 @@ Created backend for specific user products.
 ## *Milestone 13: Created Product Update*
 Created *Product Update Endpoint* for Updating products.
 Created form for updating data in frontend and created autofill function.
+
+## *Milestone 14: Create Product Delete*
+Created **Product Delete Endpoint** for updating products.
+Created form for Deleting product in frontend.
