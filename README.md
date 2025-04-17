@@ -100,6 +100,18 @@ Added Add to cart button with quantity selection.
 Created endpoints in backend ***CRUD*** for handling cart.
 Handled quantity for product in cart.
 
-### **🛠️ Milestone 17: Frontend for cart page**
+## **🛠️Milestone 18: Frontend for cart page**
 Created cart page in frontend.
-Handled cart operayions from frontend.
+Handled cart operations from frontend.
+
+## **🛠️Milestone 19: Backend endpoint for cart itemquantity**
+created put request for updating quantity for cart item.
+
+## **🛠️Milestone 20:Backend endpoint for UserDetails**
+Created endpoint for userDetails in backend.
+Created user.jsx for userDetails in fronytend.
+
+## **🛠️Milestone 21:Created frontend  for address**
+Created route for Add Address Page in frontend.
+created form for adding address.
+stored address using useState Hook.
