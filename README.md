@@ -136,8 +136,13 @@ Displayed All address in address selection page.
 Displayed total price in cart.
 Added place order button at the bottom.
 
-# Milestone 25 Worked on order backend and email service
+# Milestone 25: Worked on order backend and email service
 
    - Created endpoint for order.
    - Implemented mail service from nodemailer.
    - Handled address for the delivery.
+
+# Milestone 26: Worked on order backend and email services
+
+   - Implemented mail with nodemailer.
+   - sending order details to user via email.
