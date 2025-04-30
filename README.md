@@ -119,3 +119,25 @@ stored address using useState Hook.
 ## **🛠️Milestone 22:Created Backend for Address and attached with frontend**
 Created backend endpoint for handeling address.
 added backend endpoint with frontend.
+
+## *Milestone 22:Created Backend for Address And Attached With Frontend*
+Created backend endpoint for handling address.
+added backend endpoint with frontend.
+
+
+## *Milestone 23: Worked on address in frontend and backend*
+Created placeorder button in Csrt page and Added navigation to select address.
+Created select address page and provided option to select one address.
+Created backend endpoint to sent all address to user.
+
+## *Milestone 24: Worked on address in frontend and backend*
+Displayed All of products in cart.
+Displayed All address in address selection page.
+Displayed total price in cart.
+Added place order button at the bottom.
+
+# Milestone 25 Worked on order backend and email service
+
+   - Created endpoint for order.
+   - Implemented mail service from nodemailer.
+   - Handled address for the delivery.
