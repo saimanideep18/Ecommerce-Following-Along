@@ -146,3 +146,6 @@ Added place order button at the bottom.
 
    - Implemented mail with nodemailer.
    - sending order details to user via email.
+
+## *Milestone 27 worked on frontend for my oreder page*
+Created get request to get request my orders
