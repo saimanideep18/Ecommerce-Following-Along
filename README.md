@@ -149,3 +149,8 @@ Added place order button at the bottom.
 
 ## *Milestone 27 worked on frontend for my oreder page*
 Created get request to get request my orders
+
+### **🛠 Milestone 28 worked on frontend for my order page
+
+✅ Added my-orders page for every order add cancel order button.
+✅ created an endpoint that will receive the order-id.
