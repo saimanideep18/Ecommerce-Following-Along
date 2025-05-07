@@ -138,7 +138,11 @@ const Checkout = () => {
         {/* Checkout Button */}
         <button
           className="mt-6 bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition block mx-auto"
-          onClick={handleCheckout}
+          onClick={()=>{
+            navigate("/payment",{
+              state: {payment: 500},
+            })
+          }}
         >
           Place Order
         </button>

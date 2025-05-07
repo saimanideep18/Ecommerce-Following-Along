@@ -25,6 +25,7 @@ const AllRouting = () => {
         <Route path='/all-address' element={<AllAddress/>} />
         <Route path='/checkout' element={<Checkout/>} />
         <Route path='/myorders' element={<MyOrders/>} />
+        <Route path='/payment' element={<payment/>} />
         <Route path='*' element={<h1>404 Not Found</h1>} />
         
     </Routes>

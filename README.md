@@ -154,3 +154,9 @@ Created get request to get request my orders
 
 ✅ Added my-orders page for every order add cancel order button.
 ✅ created an endpoint that will receive the order-id.
+
+### **🛠 Milestone 29 payment
+
+✅ Integrated dummy payment.
+
+
