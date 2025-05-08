@@ -163,3 +163,9 @@ Created get request to get request my orders
 
 
 ✅ Integrated dummy payment.
+
+
+### *🛠 Milestone 31 Redux implementation*
+
+✅ Implemented Redux in frontend
+✅ used redux in user details page.
