@@ -174,3 +174,8 @@ Created get request to get request my orders
 ### *🛠 Milestone 32 Redux implementation*
 
 ✅ Implemented Redux in frontend
+
+### *🛠 Milestone 33 setting up token in cookies*
+
+✅ Implemented cookies auth by using cookie-parser npm package
+✅ added cookie by login page.
