@@ -169,3 +169,8 @@ Created get request to get request my orders
 
 ✅ Implemented Redux in frontend
 ✅ used redux in user details page.
+
+
+### *🛠 Milestone 32 Redux implementation*
+
+✅ Implemented Redux in frontend
